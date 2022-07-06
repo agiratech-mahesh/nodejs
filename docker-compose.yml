@@ -17,3 +17,5 @@ services:
       - mongodb:/data/db
 volumes:
  mongodb:
+ docker:
+     image: docker
