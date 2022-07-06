@@ -30,7 +30,7 @@ pipeline {
                stage('pushing to dockerhub') {
                steps {
                  sh ' docker login -u maheshagiratech -p b4d9225a-ad62-4567-bcd5-33d006043371 https://index.docker.io/v1/ '
-                 sh ' docker tag node_node maheshagiratech/nodejss'
+                 sh ' docker tag nodejs_node maheshagiratech/nodejss'
                  sh ' docker push maheshagiratech/nodejss:latest '
                  }
               }
